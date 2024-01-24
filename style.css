@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode theme */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Dark mode theme */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#scanner-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#scanner-container.light-mode {
+    background-color: #ffffff;
+}
+
+#scanner-container.dark-mode {
+    background-color: #464646; /* Slightly lighter shade of dark gray */
+}
+
+#barcode-input {
+    padding: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for color change */
+}
+
+#barcode-input.light-mode {
+    background-color: #ffffff;
+    color: #333; /* Set the initial text color in light mode */
+}
+
+#barcode-input.dark-mode {
+    background-color: #585858; /* Slightly lighter shade of dark gray */
+    color: #ddd; /* Set the initial text color in dark mode */
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#previous-scans-container {
+    margin-top: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+#previous-scans {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scan-item {
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.scan-yes {
+    background-color: #8BC34A; /* Green */
+}
+
+.scan-no {
+    background-color: #FF5733; /* Red */
+}
+
+#version {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    transition: color 0.3s; /* Add transition for color change */
+}
+
+#version.dark-mode {
+    color: #ddd; /* Lighter color in dark mode */
+}
+
+#dark-mode-toggle {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s; /* Add transition for color change */
+}
+
+#dark-mode-toggle.dark-mode {
+    color: #ddd; /* Lighter color in dark mode */
+}

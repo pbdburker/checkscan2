@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Barcode Scanner</title>
+</head>
+
+<body class="light-mode">
+    <div id="scanner-container">
+        <label for="barcode-input">Scan Barcode:</label>
+        <input type="text" id="barcode-input" onkeydown="handleKeyDown(event)" autofocus>
+        <p id="result"></p>
+        <div id="previous-scans-container">
+            <div id="previous-scans"></div>
+        </div>
+        <div id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</div>
+        <div id="version">Version 1.4</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
